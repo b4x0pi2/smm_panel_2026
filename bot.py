@@ -22,8 +22,8 @@ from telegram.ext import (
 )
 
 # =============================== CONFIG ======================================
-BOT_TOKEN = os.environ["9292451037:AAH8cgJVPajluXmdtZUtjrSlLEVnDlNk5w4"]
-ADMIN_IDS = {int(x) for x in os.getenv("8556289078", "").replace(" ", "").split(",") if x.isdigit()}
+BOT_TOKEN = os.environ["BOT_TOKEN"]
+ADMIN_IDS = {int(x) for x in os.getenv("ADMIN_IDS", "").replace(" ", "").split(",") if x.isdigit()}
 CUR = os.getenv("CURRENCY", "Rs")
 SUPPORT = os.getenv("SUPPORT_USERNAME", "@the_babarrrr")
 DB_PATH = os.getenv("DB_PATH", "bot.db")
