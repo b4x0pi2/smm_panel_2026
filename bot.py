@@ -26,7 +26,7 @@ from telegram.ext import (
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "").strip()
 if ":" not in BOT_TOKEN:
     raise SystemExit("BOT_TOKEN variable missing hai. Railway > Variables mein BOT_TOKEN add karein.")
-ADMIN_IDS = {int(x) for x in os.getenv("8556289078", "").replace(" ", "").split(",") if x.isdigit()}
+ADMIN_IDS = {int(x) for x in os.getenv("ADMIN_IDS", "").replace(" ", "").split(",") if x.isdigit()}
 CUR = os.getenv("CURRENCY", "Rs")
 SUPPORT = os.getenv("SUPPORT_USERNAME", "@the_babarrrr")
 DB_PATH = os.getenv("DB_PATH", "bot.db")
