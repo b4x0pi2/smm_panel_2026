@@ -23,7 +23,7 @@ from telegram.ext import (
 
 # =============================== CONFIG ======================================
 # =============================== CONFIG ======================================
-BOT_TOKEN = os.environ.get("9292451037:AAHdJkxyPW_3ubRLBiMPAgKwRLp3EoXvUeg", "").strip()
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "").strip()
 if ":" not in BOT_TOKEN:
     raise SystemExit("BOT_TOKEN variable missing hai. Railway > Variables mein BOT_TOKEN add karein.")
 ADMIN_IDS = {int(x) for x in os.getenv("8556289078", "").replace(" ", "").split(",") if x.isdigit()}
